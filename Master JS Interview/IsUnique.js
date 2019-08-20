@@ -55,7 +55,7 @@ function isUnique3 (str) {
     return true;
 }
 // time: O(n)
-// space:
+// space: 
 
 
 /*
