@@ -14,9 +14,18 @@ function dayOffset(s, n) {
     var weekLength = Object.keys(week).length;
     for (let i = 0; i < weekLength; i++) {
         if (s === Object.keys(week)[i]) {
-            date = Object.values(week)[i] + Math.abs(n);
+            date = Object.values(week)[i] + n;
+            if (date === 0) {
+                date = date + 7;
+            }
             while (date > 7) {
                 date = date - 7;
+            }
+            while (date < 0) {
+                date = date + 7;
+                if (date === -7) {
+                    date = Math.abs(date);
+                }
             }
         }
     }
@@ -24,6 +33,9 @@ function dayOffset(s, n) {
 }
 
 console.log(dayOffset('Wednesday', 4));
-console.log(dayOffset('Wednesday', -1));
+console.log(dayOffset('Wednesday', -5));
 console.log(dayOffset('Tuesday', 14));
 console.log(dayOffset('Monday', -15));
+console.log(dayOffset('Monday', 0));
+console.log(dayOffset('Monday', -1));
+console.log(dayOffset('Sunday', -7));
