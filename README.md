@@ -1,2 +1,2 @@
-# Interview-Practice
+# JavaScript-Practice
  
