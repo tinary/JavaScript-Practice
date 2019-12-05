@@ -11,9 +11,7 @@ Example:
 
 var week = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 
-function dayOffset(s, n) {
-    return week[(week.indexOf(s) + (n + 364)) % 7];
-}
+const dayOffset = (s, n) => {return week[(week.indexOf(s) + (n + 364)) % 7];}
 
 
 console.log(dayOffset('Wednesday', 4));
