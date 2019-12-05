@@ -15,6 +15,7 @@ function dayOffset(s, n) {
     return week[(week.indexOf(s) + (n + 364)) % 7];
 }
 
+
 console.log(dayOffset('Wednesday', 4));
 console.log(dayOffset('Wednesday', -5));
 console.log(dayOffset('Tuesday', 14));
@@ -22,3 +23,4 @@ console.log(dayOffset('Monday', -15));
 console.log(dayOffset('Monday', 0));
 console.log(dayOffset('Monday', -1));
 console.log(dayOffset('Sunday', -7));
+console.log(dayOffset('Friday', -5));
