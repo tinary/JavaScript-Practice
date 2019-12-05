@@ -9,9 +9,9 @@ Example:
 > "Sunday"
 */
 
+var week = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 
-const dayOffset = (s, n) => {
-    var week = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+function dayOffset(s, n) {
     return week[(week.indexOf(s) + (n + 364)) % 7];
 }
 
