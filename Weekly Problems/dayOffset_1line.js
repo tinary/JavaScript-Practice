@@ -23,4 +23,3 @@ console.log(dayOffset('Monday', -15));
 console.log(dayOffset('Monday', 0));
 console.log(dayOffset('Monday', -1));
 console.log(dayOffset('Sunday', -7));
-console.log(dayOffset('Friday', -5));
