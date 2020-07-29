@@ -23,9 +23,22 @@ A solution set is:
 var threeSum = function (nums) {
   let result = [];
 
-  let i = 0;
+
 
   for (let i = 0; i < nums.length; i++) {
+    let j = i + 1;
+    let k = nums.length - 1;
+
+    while (j < k) {
+      let sum = nums[i] + nums[j] + nums[k];
+      if (sum === 0){
+        result.push([nums[i] , nums[j], nums[k]]);
+      }
+      else if ()
+    }
+
+
+
     for (let j = i + 1; j < nums.length; j++) {
       for (let k = i + 2; k < nums.length; k++) {
         let sum = nums[i] + nums[j] + nums[k]; 
